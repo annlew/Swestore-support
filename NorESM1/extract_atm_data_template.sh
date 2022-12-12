@@ -17,7 +17,7 @@ echo $f
    #for g in $(rclone lsf $f | grep -E '(20[5-9]|21[0-9])' | grep -E '\-(01|02|12)' )
 
    # Filter data from 2050-2079 and only DJF
-   for g in $(rclone lsf $f | grep -E '(20[5-7)' | grep -E '\-(01|02|12)' )
+   for g in $(rclone lsf $f | grep -E '(20[5-7])' | grep -E '\-(01|02|12)' )
 
    do echo "'"$f$g"'" 
       echo "'"$g"'" 
